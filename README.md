@@ -1,1 +1,1 @@
-# rpk-schema-registry
+# RedPanda schema registry client
