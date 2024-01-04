@@ -1,0 +1,22 @@
+[package]
+name = "rpk-schema-registry"
+version = "0.1.0"
+edition = "2021"
+authors = ["Nguyen Thanh Dat <dat.nguyen@bitbytelab.io>"]
+description = "A Rust client for RedPanda Data Schema Registry"
+
+[lib]
+name = "schema_registry"
+path = "src/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+reqwest = { version = "0.11", features = ["rustls-tls", "json", "blocking"] }
+thiserror = "1"
+
+[dev-dependencies]
+tokio = { version = "1", features = ["full"] }
+anyhow = "1"
