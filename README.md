@@ -1,0 +1,1 @@
+# rpk-schema-registry
